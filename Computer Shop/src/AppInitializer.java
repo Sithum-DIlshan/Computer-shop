@@ -42,6 +42,5 @@ public class AppInitializer extends Application {
         translate.play();*/
 
         primaryStage.show();
-        /*hello I edited programm*/
     }
 }
