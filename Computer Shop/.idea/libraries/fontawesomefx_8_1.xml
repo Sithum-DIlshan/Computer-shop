@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="fontawesomefx-8.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Addon Libraries/fontawesomefx-8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Addon Libraries/jfoenix-8.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
