@@ -19,9 +19,10 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("view/LoginForm.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("view/Test.fxml"));
         Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
+        primaryStage.setScene(scene);
+       /* scene.setFill(Color.TRANSPARENT);
         primaryStage.setScene(scene);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
 
@@ -34,7 +35,7 @@ public class AppInitializer extends Application {
             primaryStage.setX(event.getScreenX() - x);
             primaryStage.setY(event.getScreenY() - y);
 
-        });/*
+        });*//*
         TranslateTransition translate = new TranslateTransition();
         translate.setDuration(Duration.seconds(0.7));
         translate.setNode(root);
