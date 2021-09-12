@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" style="-fx-background-image: #ff0091ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../style/background.css">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="737.0">
+               <children>
+                  <Label graphicTextGap="0.0" prefHeight="16.0" prefWidth="333.0" text="Monthly Income Report" textFill="#c9c9c9">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="100.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" />
+                  <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../style/button.css" text="View">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="-80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="300.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="110.0" prefHeight="16.0" prefWidth="756.0">
+               <children>
+                  <Label graphicTextGap="0.0" text="Annually Income Report" textFill="#c9c9c9">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="175.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" />
+                  <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../style/button.css" text="View">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="-80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="300.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="138.0" prefHeight="16.0" prefWidth="675.0">
+               <children>
+                  <Label graphicTextGap="0.0" text="Most Movable Item" textFill="#c9c9c9">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="208.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" />
+                  <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../style/button.css" text="View">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="-80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="300.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="166.0" prefHeight="16.0" prefWidth="675.0">
+               <children>
+                  <Label graphicTextGap="0.0" text="Least Movable Item" textFill="#c9c9c9">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="202.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" />
+                  <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../style/button.css" text="View">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="-80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="300.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>
