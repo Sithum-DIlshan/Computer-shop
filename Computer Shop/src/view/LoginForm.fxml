@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="874.0" styleClass="backgroundColor" stylesheets="@../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="874.0" styleClass="backgroundColor1" stylesheets="@../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
       <AnchorPane layoutX="523.0" layoutY="22.0" prefHeight="427.0" prefWidth="324.0" style="-fx-background-color: #00695c; -fx-background-radius: 7px;" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="523.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="22.0">
          <children>
@@ -17,7 +17,7 @@
                   <Font name="DejaVu Sans" size="13.0" />
                </font></JFXTextField>
             <JFXPasswordField fx:id="txtPassword" focusColor="#c3c2cc" labelFloat="true" layoutX="28.0" layoutY="223.0" onKeyReleased="#validate_data" prefHeight="26.0" prefWidth="281.0" promptText="password" styleClass="jfx-password-field" stylesheets="@../style/style.css" unFocusColor="#c3bbbb" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="13.0" />
-            <JFXButton layoutX="29.0" layoutY="295.0" prefHeight="34.0" prefWidth="281.0" styleClass="signButton" stylesheets="@../style/signInButton.css" text="Sign in" textFill="#dddddd" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="12.0" />
+            <JFXButton layoutX="29.0" layoutY="295.0" prefHeight="34.0" prefWidth="281.0" styleClass="signButton" stylesheets="@../style/button.css" text="Sign in" textFill="#dddddd" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="12.0" />
             <Label layoutX="126.0" layoutY="48.0" prefHeight="52.0" prefWidth="90.0" text="Sign In" textFill="#f2f0f0" AnchorPane.bottomAnchor="327.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="48.0">
                <font>
                   <Font name="DejaVu Sans" size="22.0" />
