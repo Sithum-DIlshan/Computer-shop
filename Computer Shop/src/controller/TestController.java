@@ -43,7 +43,7 @@ public class TestController implements Initializable {
             e.printStackTrace();
         }*/
         try {
-            nodes[0] = FXMLLoader.load(getClass().getResource("/view/SystemReports.fxml"));
+            nodes[0] = FXMLLoader.load(getClass().getResource("/view/Orders.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
