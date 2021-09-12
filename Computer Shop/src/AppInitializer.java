@@ -1,12 +1,8 @@
-import javafx.animation.TranslateTransition;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import javafx.util.Duration;
 
 import java.io.IOException;
 
@@ -19,7 +15,7 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("view/Test.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("view/DashboardForm.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
        /* scene.setFill(Color.TRANSPARENT);

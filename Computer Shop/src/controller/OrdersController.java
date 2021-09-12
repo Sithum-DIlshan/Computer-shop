@@ -16,7 +16,7 @@ public class OrdersController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
-            Node node = FXMLLoader.load(getClass().getResource("/view/OrderNode.fxml"));
+            Node node = FXMLLoader.load(getClass().getResource("/view/nodes/OrderNode.fxml"));
             orderPane.getChildren().add(node);
         } catch (IOException e) {
             e.printStackTrace();

@@ -38,12 +38,12 @@
             <Insets left="80.0" />
          </padding>
       </Label>
-      <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../style/button.css" text="Edit">
+      <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../../style/button.css" text="Edit">
          <HBox.margin>
             <Insets left="70.0" />
          </HBox.margin>
       </Button>
-      <Button layoutX="438.0" layoutY="16.0" mnemonicParsing="false" styleClass="removeButton" stylesheets="@../style/button.css" text="Remove">
+      <Button layoutX="438.0" layoutY="16.0" mnemonicParsing="false" styleClass="removeButton" stylesheets="@../../style/button.css" text="Remove">
          <HBox.margin>
             <Insets left="70.0" />
          </HBox.margin>
