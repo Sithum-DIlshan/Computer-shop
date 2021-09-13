@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdersController">
+    <children>
+        <JFXTextField focusColor="#2c3e50" layoutX="561.0" layoutY="29.0" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #2c3e50; -fx-border-color: #bdbdbd; -fx-background-radius: 8px; -fx-border-radius: 8px;" styleClass="searchButton" stylesheets="@../style/button.css">
+            <font>
+                <Font name="DejaVu Sans" size="13.0" />
+            </font>
+        </JFXTextField>
+        <ImageView fitHeight="20.0" fitWidth="17.0" layoutX="717.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assests/search.png" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="0.59" />
+            </effect>
+        </ImageView>
+        <JFXButton layoutX="714.0" layoutY="31.0" prefHeight="20.0" prefWidth="17.0" text=" " />
+        <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="109.0" prefHeight="49.0" prefWidth="727.0">
+            <children>
+                <Label text="User Id" textFill="#b2b1b1" />
+                <Label layoutX="10.0" layoutY="28.0" text="User Name" textFill="#b2b1b1">
+                    <padding>
+                        <Insets left="80.0" />
+                    </padding>
+                </Label>
+                <Label layoutX="46.0" layoutY="28.0" text="Address" textFill="#b2b1b1">
+                    <padding>
+                        <Insets left="80.0" />
+                    </padding>
+                </Label>
+                <Label layoutX="118.0" layoutY="28.0" text="City" textFill="#b2b1b1">
+                    <padding>
+                        <Insets left="80.0" />
+                    </padding>
+                </Label>
+            <Button mnemonicParsing="false" styleClass="addButton" stylesheets="@../style/button.css" text="Add User">
+               <HBox.margin>
+                  <Insets left="160.0" />
+               </HBox.margin>
+            </Button>
+            </children>
+        </HBox>
+        <ScrollPane layoutX="6.0" layoutY="176.0" prefHeight="420.0" prefWidth="734.0" stylesheets="@../style/scroll_pane.css">
+            <content>
+                <Pane prefHeight="421.0" prefWidth="728.0" style="-fx-background-color: #2c3e50;" />
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>
