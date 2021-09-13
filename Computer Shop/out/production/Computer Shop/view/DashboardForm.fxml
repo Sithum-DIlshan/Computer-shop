@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TestController">
+   <children>
+      <BorderPane fx:id="border" prefHeight="613.0" prefWidth="876.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="613.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="101.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assests/Stilian Nikolow - Dec 2019 Round.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="70.0" top="30.0" />
+                     </VBox.margin>
+                     <effect>
+                        <ColorAdjust brightness="0.27" saturation="-0.02" />
+                     </effect></ImageView>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Overview" textFill="#c3bebe">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <effect>
+                              <ColorAdjust brightness="0.68" saturation="0.02" />
+                           </effect>
+                           <image>
+                              <Image url="@assests/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="176.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="System reports" textFill="#c3bebe">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <effect>
+                              <ColorAdjust brightness="0.68" />
+                           </effect>
+                           <image>
+                              <Image url="@assests/file.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Orders" textFill="#c3bebe">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assests/shopping-bag.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.68" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="252.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Repairs" textFill="#c3bebe">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assests/repair.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.68" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Guarantee" textFill="#c3bebe">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assests/guarantee.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.68" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="328.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Users" textFill="#c3bebe">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assests/user.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.68" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="366.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Permission" textFill="#c3bebe">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assests/user (1).png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.68" />
+                           </effect></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="404.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Customers" textFill="#c3bebe">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assests/customer.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.68" />
+                           </effect></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                  </Button>
+               </children></VBox>
+         </left>
+         <center>
+            <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="23.0" layoutY="157.0" prefHeight="46.0" prefWidth="711.0">
+                     <children>
+                        <Label text="Company Name" textFill="#393939">
+                           <font>
+                              <Font name="DejaVu Sans" size="13.0" />
+                           </font></Label>
+                        <Label contentDisplay="CENTER" text="Customer Id" textFill="#393939">
+                           <padding>
+                              <Insets left="85.0" />
+                           </padding>
+                           <font>
+                              <Font name="DejaVu Sans" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="Order Id" textFill="#393939">
+                           <padding>
+                              <Insets left="85.0" />
+                           </padding>
+                           <font>
+                              <Font name="DejaVu Sans" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="46.0" layoutY="10.0" text="Quantity" textFill="#393939">
+                           <padding>
+                              <Insets left="85.0" />
+                           </padding>
+                           <font>
+                              <Font name="DejaVu Sans" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="82.0" layoutY="10.0" text="Order Date" textFill="#393939">
+                           <padding>
+                              <Insets left="85.0" />
+                           </padding>
+                           <font>
+                              <Font name="DejaVu Sans" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ScrollPane layoutX="23.0" layoutY="206.0" prefHeight="405.0" prefWidth="719.0" stylesheets="@../style/scroll_pane.css">
+                     <content>
+                        <VBox fx:id="getItems" prefHeight="398.0" prefWidth="711.0" style="-fx-background-color: #ffff;" />
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="30.0" layoutY="14.0" text="Today Orders">
+                     <font>
+                        <Font name="DejaVu Sans" size="21.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="33.0" layoutY="70.0" prefHeight="40.0" prefWidth="690.0">
+                     <children>
+                        <Label text="100" textFill="#1976d2">
+                           <padding>
+                              <Insets left="200.0" />
+                           </padding>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="33.0" text="20" textFill="#00c9ab">
+                           <padding>
+                              <Insets left="200.0" />
+                           </padding>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="217.0" layoutY="110.0" text="Total Orders" />
+                  <Label layoutX="444.0" layoutY="110.0" text="Total Repairs" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
