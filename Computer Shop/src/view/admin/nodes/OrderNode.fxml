@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="728.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="O-001" textFill="#b2b1b1">
+         <font>
+            <Font name="DejaVu Sans" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="22.0" text="C-001" textFill="#b2b1b1">
+         <font>
+            <Font name="DejaVu Sans" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="80.0" />
+         </padding>
+      </Label>
+      <Label layoutX="50.0" layoutY="22.0" text="2021/10/20" textFill="#b2b1b1">
+         <font>
+            <Font name="DejaVu Sans" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="80.0" />
+         </padding>
+      </Label>
+      <Label layoutX="90.0" layoutY="22.0" text="2000" textFill="#b2b1b1">
+         <font>
+            <Font name="DejaVu Sans" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="80.0" />
+         </padding>
+      </Label>
+      <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../../../style/button.css" text="Edit">
+         <HBox.margin>
+            <Insets left="70.0" />
+         </HBox.margin>
+      </Button>
+      <Button layoutX="438.0" layoutY="16.0" mnemonicParsing="false" styleClass="removeButton" stylesheets="@../../../style/button.css" text="Remove">
+         <HBox.margin>
+            <Insets left="70.0" />
+         </HBox.margin>
+      </Button>
+   </children>
+</HBox>
