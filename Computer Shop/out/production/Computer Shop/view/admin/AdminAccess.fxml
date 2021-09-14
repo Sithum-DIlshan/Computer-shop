@@ -14,12 +14,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminAccessController">
+<AnchorPane fx:id="getScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminAccessController">
    <children>
-      <BorderPane fx:id="border" prefHeight="613.0" prefWidth="876.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BorderPane fx:id="borderPane" prefHeight="613.0" prefWidth="876.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
             <VBox prefHeight="613.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" BorderPane.alignment="CENTER">
                <children>
+
                   <ImageView fitHeight="101.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assests/Stilian Nikolow - Dec 2019 Round.png" />
@@ -30,12 +31,12 @@
                      <effect>
                         <ColorAdjust brightness="0.27" saturation="-0.02" />
                      </effect></ImageView>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Overview" textFill="#c3bebe">
+                  <Button fx:id="overview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="adminAccessButtons" stylesheets="@../../style/button.css" text="Overview" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
                      <VBox.margin>
-                        <Insets top="16.0" />
+                        <Insets top="10.0" />
                      </VBox.margin>
                      <graphic>
                         <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
@@ -51,7 +52,7 @@
                         <Insets left="60.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="176.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="System reports" textFill="#c3bebe">
+                  <Button fx:id="systemReports" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="176.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="adminAccessButtons" stylesheets="@../../style/button.css" text="System reports" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
@@ -66,13 +67,13 @@
                         </ImageView>
                      </graphic>
                      <VBox.margin>
-                        <Insets top="16.0" />
+                        <Insets top="10.0" />
                      </VBox.margin>
                      <padding>
                         <Insets left="60.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Orders" textFill="#c3bebe">
+                  <Button fx:id="orders" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="adminAccessButtons" stylesheets="@../../style/button.css" text="Orders" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
@@ -87,13 +88,13 @@
                         </ImageView>
                      </graphic>
                      <VBox.margin>
-                        <Insets top="16.0" />
+                        <Insets top="10.0" />
                      </VBox.margin>
                      <padding>
                         <Insets left="60.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="252.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Repairs" textFill="#c3bebe">
+                  <Button fx:id="repairs" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="252.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="adminAccessButtons" stylesheets="@../../style/button.css" text="Repairs" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
@@ -108,13 +109,13 @@
                         </ImageView>
                      </graphic>
                      <VBox.margin>
-                        <Insets top="16.0" />
+                        <Insets top="10.0" />
                      </VBox.margin>
                      <padding>
                         <Insets left="60.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Guarantee" textFill="#c3bebe">
+                  <Button fx:id="guarantee" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="adminAccessButtons" stylesheets="@../../style/button.css" text="Guarantee" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
@@ -129,13 +130,13 @@
                         </ImageView>
                      </graphic>
                      <VBox.margin>
-                        <Insets top="16.0" />
+                        <Insets top="10.0" />
                      </VBox.margin>
                      <padding>
                         <Insets left="60.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="328.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Users" textFill="#c3bebe">
+                  <Button fx:id="users" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="328.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="adminAccessButtons" stylesheets="@../../style/button.css" text="Users" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
@@ -150,13 +151,13 @@
                         </ImageView>
                      </graphic>
                      <VBox.margin>
-                        <Insets top="16.0" />
+                        <Insets top="10.0" />
                      </VBox.margin>
                      <padding>
                         <Insets left="60.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="366.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Permission" textFill="#c3bebe">
+                  <Button fx:id="permission" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="366.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="adminAccessButtons" stylesheets="@../../style/button.css" text="Permission" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
@@ -170,13 +171,13 @@
                            </effect></ImageView>
                      </graphic>
                      <VBox.margin>
-                        <Insets top="16.0" />
+                        <Insets top="10.0" />
                      </VBox.margin>
                      <padding>
                         <Insets left="60.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="404.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Customers" textFill="#c3bebe">
+                  <Button fx:id="customers" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="404.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="adminAccessButtons" stylesheets="@../../style/button.css" text="Customers" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
@@ -190,16 +191,37 @@
                            </effect></ImageView>
                      </graphic>
                      <VBox.margin>
-                        <Insets top="16.0" />
+                        <Insets top="10.0" />
                      </VBox.margin>
                      <padding>
                         <Insets left="60.0" />
                      </padding>
                   </Button>
+                  <Button fx:id="signOut" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="487.0" mnemonicParsing="false" onAction="#signOutClicked" prefHeight="38.0" prefWidth="264.0" styleClass="adminAccessButtons" stylesheets="@../../style/button.css" text="Sign out" textFill="#c3bebe">
+                     <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/login.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.68" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="60.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
                </children></VBox>
          </left>
          <center>
-            <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
                   <HBox alignment="CENTER_LEFT" layoutX="23.0" layoutY="157.0" prefHeight="46.0" prefWidth="711.0">
                      <children>
@@ -243,7 +265,7 @@
                   </HBox>
                   <ScrollPane layoutX="23.0" layoutY="206.0" prefHeight="405.0" prefWidth="719.0" stylesheets="@../../style/scroll_pane.css">
                      <content>
-                        <VBox fx:id="getItems" prefHeight="398.0" prefWidth="711.0" style="-fx-background-color: #ffff;" />
+                        <VBox prefHeight="398.0" prefWidth="711.0" style="-fx-background-color: #ffff;" />
                      </content>
                   </ScrollPane>
                   <Label layoutX="30.0" layoutY="14.0" text="Today Orders">

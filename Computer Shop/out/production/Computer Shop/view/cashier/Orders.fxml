@@ -12,14 +12,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RepairController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="849.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdersController">
     <children>
-        <JFXTextField focusColor="#2c3e50" layoutX="561.0" layoutY="29.0" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #2c3e50; -fx-border-color: #bdbdbd; -fx-background-radius: 8px; -fx-border-radius: 8px;" styleClass="searchButton" stylesheets="@../../style/button.css">
+        <JFXTextField focusColor="#2c3e50" layoutX="641.0" layoutY="29.0" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #2c3e50; -fx-border-color: #bdbdbd; -fx-background-radius: 8px; -fx-border-radius: 8px;" styleClass="searchButton" stylesheets="@../../style/button.css">
             <font>
                 <Font name="DejaVu Sans" size="13.0" />
             </font>
         </JFXTextField>
-        <ImageView fitHeight="20.0" fitWidth="17.0" layoutX="717.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="20.0" fitWidth="17.0" layoutX="797.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../assests/search.png" />
             </image>
@@ -27,16 +27,16 @@
                 <ColorAdjust brightness="0.59" />
             </effect>
         </ImageView>
-        <JFXButton layoutX="714.0" layoutY="31.0" prefHeight="20.0" prefWidth="17.0" text=" " />
+        <JFXButton layoutX="794.0" layoutY="31.0" prefHeight="20.0" prefWidth="17.0" text=" " />
         <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="109.0" prefHeight="49.0" prefWidth="727.0">
             <children>
-                <Label text="Repair Id" textFill="#b2b1b1" />
+                <Label text="Order Id" textFill="#b2b1b1" />
                 <Label layoutX="10.0" layoutY="28.0" text="Customer Id" textFill="#b2b1b1">
                     <padding>
                         <Insets left="80.0" />
                     </padding>
                 </Label>
-                <Label layoutX="46.0" layoutY="28.0" text="Repair type" textFill="#b2b1b1">
+                <Label layoutX="46.0" layoutY="28.0" text="Order Date" textFill="#b2b1b1">
                     <padding>
                         <Insets left="80.0" />
                     </padding>
@@ -48,9 +48,9 @@
                 </Label>
             </children>
         </HBox>
-        <ScrollPane layoutX="6.0" layoutY="176.0" prefHeight="420.0" prefWidth="734.0" stylesheets="@../../style/scroll_pane.css">
+        <ScrollPane layoutX="7.0" layoutY="179.0" prefHeight="420.0" prefWidth="836.0" stylesheets="@../../style/scroll_pane.css">
             <content>
-                <Pane fx:id="pane" prefHeight="421.0" prefWidth="728.0" style="-fx-background-color: #2c3e50;" />
+                <Pane fx:id="orderPane" prefHeight="421.0" prefWidth="832.0" style="-fx-background-color: #2c3e50;" />
             </content>
         </ScrollPane>
     </children>

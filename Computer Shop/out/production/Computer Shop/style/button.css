@@ -80,3 +80,33 @@
     -fx-background-color: #094494;
     -fx-text-fill: white;
 }
+
+.adminAccessButtons {
+    -fx-background-color: #1c002b;
+}
+
+.adminAccessButtons:hover {
+    -fx-background-color: #440269;
+    -fx-border-width: 0 0 0 2;
+    -fx-border-color: #9a9a00;
+}
+
+.cashierAccessButtons {
+    -fx-background-color: #31314a;
+}
+
+.cashierAccessButtons:hover {
+    -fx-background-color: #464664;
+    -fx-border-width: 0 0 0 2;
+    -fx-border-color: #adad00;
+}
+
+.IMAccessButtons {
+    -fx-background-color: #1c002b;
+}
+
+.IMAccessButtons:hover {
+    -fx-background-color: #3f006b;
+    -fx-border-width: 0 0 0 2;
+    -fx-border-color: #adad00;
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminOverviewController">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="23.0" layoutY="157.0" prefHeight="46.0" prefWidth="711.0">
+            <children>
+                <Label text="Company Name" textFill="#393939">
+                    <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                    </font></Label>
+                <Label contentDisplay="CENTER" text="Customer Id" textFill="#393939">
+                    <padding>
+                        <Insets left="85.0" />
+                    </padding>
+                    <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="Order Id" textFill="#393939">
+                    <padding>
+                        <Insets left="85.0" />
+                    </padding>
+                    <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label contentDisplay="CENTER" layoutX="46.0" layoutY="10.0" text="Quantity" textFill="#393939">
+                    <padding>
+                        <Insets left="85.0" />
+                    </padding>
+                    <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                    </font>
+                </Label>
+                <Label contentDisplay="CENTER" layoutX="82.0" layoutY="10.0" text="Order Date" textFill="#393939">
+                    <padding>
+                        <Insets left="85.0" />
+                    </padding>
+                    <font>
+                        <Font name="DejaVu Sans" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <ScrollPane layoutX="23.0" layoutY="206.0" prefHeight="405.0" prefWidth="719.0" stylesheets="@../../style/scroll_pane.css">
+         <content>
+            <Pane fx:id="overviewPane" prefHeight="405.0" prefWidth="717.0" />
+         </content>
+        </ScrollPane>
+        <Label layoutX="30.0" layoutY="14.0" text="Today Orders">
+            <font>
+                <Font name="DejaVu Sans" size="21.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER_LEFT" layoutX="33.0" layoutY="70.0" prefHeight="40.0" prefWidth="690.0">
+            <children>
+                <Label text="100" textFill="#1976d2">
+                    <padding>
+                        <Insets left="200.0" />
+                    </padding>
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="10.0" layoutY="33.0" text="20" textFill="#00c9ab">
+                    <padding>
+                        <Insets left="200.0" />
+                    </padding>
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <Label layoutX="217.0" layoutY="110.0" text="Total Orders" />
+        <Label layoutX="444.0" layoutY="110.0" text="Total Repairs" />
+    </children>
+</Pane>

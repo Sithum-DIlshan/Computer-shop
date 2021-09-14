@@ -16,7 +16,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="1113.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierAccessFormController">
     <children>
-        <BorderPane fx:id="border" prefHeight="613.0" prefWidth="1113.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <BorderPane fx:id="border" prefHeight="613.0" prefWidth="1113.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <left>
                 <VBox prefHeight="613.0" prefWidth="264.0" style="-fx-background-color: #31314a;" BorderPane.alignment="CENTER">
                     <children>
@@ -31,7 +31,7 @@
                                 <ColorAdjust brightness="0.27" saturation="-0.02" />
                             </effect>
                   </ImageView>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #31314a;" text="Overview" textFill="#c3bebe">
+                        <Button fx:id="overview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="cashierAccessButtons" stylesheets="@../../style/button.css" text="Overview" textFill="#c3bebe">
                             <font>
                                 <Font name="DejaVu Sans" size="13.0" />
                             </font>
@@ -52,7 +52,7 @@
                                 <Insets left="60.0" />
                             </padding>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #31314a;" text="Place order" textFill="#c3bebe">
+                        <Button fx:id="placeOrder" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="cashierAccessButtons" stylesheets="@../../style/button.css" text="Place order" textFill="#c3bebe">
                             <font>
                                 <Font name="DejaVu Sans" size="13.0" />
                             </font>
@@ -73,7 +73,7 @@
                                 <Insets left="60.0" />
                             </padding>
                         </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="339.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #31314a;" text="Manage Order" textFill="#c3bebe">
+                  <Button fx:id="manageOrder" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="339.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="cashierAccessButtons" stylesheets="@../../style/button.css" text="Manage Order" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
@@ -94,7 +94,7 @@
                         <Insets top="60.0" />
                      </VBox.margin>
                   </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="404.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #31314a;" text="Sign out" textFill="#c3bebe">
+                        <Button fx:id="signOut" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="404.0" mnemonicParsing="false" onAction="#signOutClicked" prefHeight="38.0" prefWidth="264.0" styleClass="cashierAccessButtons" stylesheets="@../../style/button.css" text="Sign out" textFill="#c3bebe">
                             <font>
                                 <Font name="DejaVu Sans" size="13.0" />
                             </font>
@@ -117,7 +117,7 @@
                     </children></VBox>
             </left>
             <center>
-                <Pane prefHeight="613.0" prefWidth="775.0" BorderPane.alignment="CENTER">
+                <Pane fx:id="pane" prefHeight="613.0" prefWidth="775.0" BorderPane.alignment="CENTER">
                     <children>
                         <HBox alignment="CENTER_LEFT" layoutX="21.0" layoutY="157.0" prefHeight="46.0" prefWidth="781.0">
                             <children>

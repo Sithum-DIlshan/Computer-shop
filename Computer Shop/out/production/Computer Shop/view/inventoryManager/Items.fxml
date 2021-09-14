@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdersController">
     <children>
         <JFXTextField focusColor="#2c3e50" layoutX="561.0" layoutY="29.0" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #2c3e50; -fx-border-color: #bdbdbd; -fx-background-radius: 8px; -fx-border-radius: 8px;" styleClass="searchButton" stylesheets="@../../style/button.css">
             <font>
@@ -31,28 +31,28 @@
         <JFXButton layoutX="714.0" layoutY="31.0" prefHeight="20.0" prefWidth="17.0" text=" " />
         <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="109.0" prefHeight="49.0" prefWidth="727.0">
             <children>
-                <Label text="Customer Id" textFill="#b2b1b1" />
-                <Label layoutX="10.0" layoutY="28.0" text="Customer Name" textFill="#b2b1b1">
+                <Label text="Item code" textFill="#b2b1b1" />
+                <Label layoutX="10.0" layoutY="28.0" text="Description" textFill="#b2b1b1">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                </Label>
+                <Label layoutX="46.0" layoutY="28.0" text="Brand" textFill="#b2b1b1">
                     <padding>
                         <Insets left="40.0" />
                     </padding>
                 </Label>
-                <Label layoutX="46.0" layoutY="28.0" text="Address" textFill="#b2b1b1">
+                <Label layoutX="236.0" layoutY="27.0" text="Unit price" textFill="#b2b1b1">
                     <padding>
                         <Insets left="40.0" />
                     </padding>
                 </Label>
-            <Label layoutX="236.0" layoutY="27.0" text="Contact" textFill="#b2b1b1">
-               <padding>
-                  <Insets left="40.0" />
-               </padding>
-            </Label>
-            <Label layoutX="396.0" layoutY="27.0" text="City" textFill="#b2b1b1">
-               <padding>
-                  <Insets left="40.0" />
-               </padding>
-            </Label>
-                <Button mnemonicParsing="false" styleClass="addButton" stylesheets="@../../style/button.css" text="Add Customer">
+                <Label layoutX="396.0" layoutY="27.0" text="qty" textFill="#b2b1b1">
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                </Label>
+                <Button mnemonicParsing="false" styleClass="addButton" stylesheets="@../../style/button.css" text="Add Item">
                     <HBox.margin>
                         <Insets left="80.0" />
                     </HBox.margin>
@@ -61,7 +61,7 @@
         </HBox>
         <ScrollPane layoutX="6.0" layoutY="176.0" prefHeight="420.0" prefWidth="734.0" stylesheets="@../../style/scroll_pane.css">
             <content>
-                <Pane fx:id="pane" prefHeight="421.0" prefWidth="728.0" style="-fx-background-color: #2c3e50;" />
+                <Pane prefHeight="421.0" prefWidth="728.0" style="-fx-background-color: #2c3e50;" />
             </content>
         </ScrollPane>
     </children>
