@@ -14,12 +14,12 @@
       </Label>
       <Label layoutX="46.0" layoutY="10.0" text="O-001">
          <padding>
-            <Insets left="85.0" />
+            <Insets left="130.0" />
          </padding>
       </Label>
       <Label layoutX="82.0" layoutY="10.0" text="20">
          <padding>
-            <Insets left="85.0" />
+            <Insets left="120.0" />
          </padding>
       </Label>
       <Label layoutX="118.0" layoutY="10.0" text="2021/02/31">

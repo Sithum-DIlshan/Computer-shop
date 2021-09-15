@@ -7,6 +7,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
@@ -98,7 +100,15 @@
       <TextField editable="false" layoutX="473.0" layoutY="165.0" prefHeight="16.0" prefWidth="56.0" style="-fx-background-color: #fff; -fx-border-color: #b0b0b0;" />
       <ScrollPane layoutX="18.0" layoutY="344.0" prefHeight="255.0" prefWidth="814.0" stylesheets="@../../../style/scroll_pane.css">
          <content>
-            <VBox fx:id="vbox" prefHeight="254.0" prefWidth="811.0" />
+            <VBox fx:id="vbox" prefHeight="254.0" prefWidth="811.0">
+               <children>
+                  <TableView prefHeight="320.0" prefWidth="811.0">
+                    <columns>
+                      <TableColumn prefWidth="406.0" text="C1" />
+                      <TableColumn prefWidth="404.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </children></VBox>
          </content>
       </ScrollPane>
    </children>

@@ -11,6 +11,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
@@ -44,25 +45,25 @@
                 </Label>
             <Label layoutX="236.0" layoutY="27.0" text="Contact" textFill="#b2b1b1">
                <padding>
-                  <Insets left="40.0" />
+                  <Insets left="90.0" />
                </padding>
             </Label>
             <Label layoutX="396.0" layoutY="27.0" text="City" textFill="#b2b1b1">
                <padding>
-                  <Insets left="40.0" />
+                  <Insets left="60.0" />
                </padding>
             </Label>
                 <Button mnemonicParsing="false" styleClass="addButton" stylesheets="@../../style/button.css" text="Add Customer">
                     <HBox.margin>
-                        <Insets left="80.0" />
+                        <Insets left="50.0" />
                     </HBox.margin>
                 </Button>
             </children>
         </HBox>
         <ScrollPane layoutX="6.0" layoutY="176.0" prefHeight="420.0" prefWidth="734.0" stylesheets="@../../style/scroll_pane.css">
-            <content>
-                <Pane fx:id="pane" prefHeight="421.0" prefWidth="728.0" style="-fx-background-color: #2c3e50;" />
-            </content>
+         <content>
+            <VBox fx:id="vbox" prefHeight="419.0" prefWidth="736.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" />
+         </content>
         </ScrollPane>
     </children>
 </Pane>

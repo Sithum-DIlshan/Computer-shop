@@ -12,6 +12,9 @@
             <font>
                 <Font name="DejaVu Sans" size="13.0" />
             </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
         </Label>
         <Label layoutX="10.0" layoutY="22.0" text="Samantha" textFill="#b2b1b1">
             <font>

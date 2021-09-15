@@ -30,7 +30,7 @@
                             <effect>
                                 <ColorAdjust brightness="0.27" saturation="-0.02" />
                             </effect></ImageView>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="328.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Overview" textFill="#c3bebe">
+                        <Button fx:id="overview" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="328.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="IMAccessButtons" stylesheets="@../../style/button.css" text="Overview" textFill="#c3bebe">
                             <font>
                                 <Font name="DejaVu Sans" size="13.0" />
                             </font>
@@ -51,7 +51,7 @@
                         <Insets left="60.0" />
                      </padding>
                         </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="241.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Items" textFill="#c3bebe">
+                  <Button fx:id="item" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="241.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" styleClass="IMAccessButtons" stylesheets="@../../style/button.css" text="Items" textFill="#c3bebe">
                      <font>
                         <Font name="DejaVu Sans" size="13.0" />
                      </font>
@@ -72,7 +72,7 @@
                         <Insets top="70.0" />
                      </VBox.margin>
                   </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="404.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #1c002b;" text="Sign out" textFill="#c3bebe">
+                        <Button fx:id="signOut" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="404.0" mnemonicParsing="false" onAction="#signOutClicked" prefHeight="38.0" prefWidth="264.0" styleClass="IMAccessButtons" stylesheets="@../../style/button.css" text="Sign out" textFill="#c3bebe">
                             <font>
                                 <Font name="DejaVu Sans" size="13.0" />
                             </font>

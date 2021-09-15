@@ -51,6 +51,10 @@ public class LoginFormController implements Initializable {
             Stage stage = (Stage) txtUsrName.getScene().getWindow();
             Parent parent = FXMLLoader.load(getClass().getResource("/view/cashier/CashierAccess.fxml"));
             stage.setScene(new Scene(parent));
+        }else if (txtUsrName.getText().equals("Inventory") && txtPassword.getText().equals("1234")) {
+            Stage stage = (Stage) txtUsrName.getScene().getWindow();
+            Parent parent = FXMLLoader.load(getClass().getResource("/view/inventoryManager/InventoryManagerAccess.fxml"));
+            stage.setScene(new Scene(parent));
         }
     }
 }

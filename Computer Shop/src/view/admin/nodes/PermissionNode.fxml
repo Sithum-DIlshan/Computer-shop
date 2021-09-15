@@ -12,13 +12,16 @@
             <font>
                 <Font name="DejaVu Sans" size="13.0" />
             </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
         </Label>
         <Label layoutX="10.0" layoutY="22.0" text="A-001" textFill="#b2b1b1">
             <font>
                 <Font name="DejaVu Sans" size="13.0" />
             </font>
             <padding>
-                <Insets left="70.0" />
+                <Insets left="130.0" />
             </padding>
         </Label>
         <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../../../style/button.css" text="Edit">

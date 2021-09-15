@@ -12,6 +12,9 @@
             <font>
                 <Font name="DejaVu Sans" size="13.0" />
             </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
         </Label>
         <Label layoutX="10.0" layoutY="22.0" text="Ajith Perera" textFill="#b2b1b1">
             <font>
@@ -26,7 +29,7 @@
                 <Font name="DejaVu Sans" size="13.0" />
             </font>
             <padding>
-                <Insets left="70.0" />
+                <Insets left="80.0" />
             </padding>
         </Label>
       <Label layoutX="196.0" layoutY="22.0" text="0774047790" textFill="#b2b1b1">
@@ -42,12 +45,12 @@
             <Font name="DejaVu Sans" size="13.0" />
          </font>
          <padding>
-            <Insets left="70.0" />
+            <Insets left="55.0" />
          </padding>
       </Label>
         <Button layoutX="438.0" layoutY="16.0" mnemonicParsing="false" styleClass="removeButton" stylesheets="@../../../style/button.css" text="Remove">
             <HBox.margin>
-                <Insets left="60.0" />
+                <Insets left="40.0" />
             </HBox.margin>
         </Button>
     </children>
