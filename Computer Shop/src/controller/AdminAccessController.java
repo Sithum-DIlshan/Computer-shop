@@ -40,6 +40,7 @@ public class AdminAccessController implements Initializable {
     public VBox overviewNodeClick;
     public Pane overviewPane;
     public AnchorPane getScene;
+    public Pane mainPane;
 
     public AdminAccessController() {
     }
@@ -47,19 +48,26 @@ public class AdminAccessController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        try {
-            overviewClicked();
-            systemReportsClicked();
-            ordersClicked();
-            repairsClicked();
-            guaranteeClicked();
-            usersClicked();
-            permissionClicked();
-            customersClicked();
-            //signOutClicked();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        overview.setOnMouseClicked(event -> {
+            //overviewPane.setVisible(true);
+            try {
+                borderPane.setCenter(FXMLLoader.load(getClass().getResource("/view/admin/Overview.fxml")));
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        });
+
+        // overviewClicked();
+        systemReportsClicked();
+        ordersClicked();
+        repairsClicked();
+        guaranteeClicked();
+        usersClicked();
+        permissionClicked();
+        customersClicked();
+        //signOutClicked();
 
     }
 
@@ -145,7 +153,7 @@ public class AdminAccessController implements Initializable {
 
     private void overviewClicked() throws IOException, NullPointerException {
 
-        overview.setOnMouseClicked(event -> {
+        /*overview.setOnMouseClicked(event -> {
             //overviewPane.setVisible(true);
             try {
                 borderPane.setCenter(FXMLLoader.load(getClass().getResource("/view/admin/Overview.fxml")));
@@ -154,7 +162,7 @@ public class AdminAccessController implements Initializable {
                 e.printStackTrace();
             }
 
-        });
+        });*/
     }
 
 }

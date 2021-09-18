@@ -1,5 +1,6 @@
 package controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.animation.TranslateTransition;
@@ -22,8 +23,7 @@ import java.util.regex.Pattern;
 public class LoginFormController implements Initializable {
     public JFXTextField txtUsrName;
     public JFXPasswordField txtPassword;
-    LinkedHashMap<JFXTextField, Pattern> txtFieldValidate = new LinkedHashMap();
-    LinkedHashMap<JFXPasswordField, Pattern> passwordFieldValidate = new LinkedHashMap();
+    public JFXButton signInButton;
 
     public void exit(ActionEvent actionEvent) {
         System.exit(1);
@@ -31,15 +31,7 @@ public class LoginFormController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        validate_init();
-    }
-
-    public void validate_data(KeyEvent keyEvent) {
-
-    }
-
-    private void validate_init() {
-
+        signInButton.setDisable(true);
     }
 
     public void loginOnClick(MouseEvent event) throws IOException {
@@ -47,14 +39,27 @@ public class LoginFormController implements Initializable {
             Stage stage = (Stage) txtUsrName.getScene().getWindow();
             Parent parent = FXMLLoader.load(getClass().getResource("/view/admin/AdminAccess.fxml"));
             stage.setScene(new Scene(parent));
-        }else if (txtUsrName.getText().equals("Cashier") && txtPassword.getText().equals("1234")) {
+        } else if (txtUsrName.getText().equals("Cashier") && txtPassword.getText().equals("1234")) {
             Stage stage = (Stage) txtUsrName.getScene().getWindow();
             Parent parent = FXMLLoader.load(getClass().getResource("/view/cashier/CashierAccess.fxml"));
             stage.setScene(new Scene(parent));
-        }else if (txtUsrName.getText().equals("Inventory") && txtPassword.getText().equals("1234")) {
+        } else if (txtUsrName.getText().equals("Inventory") && txtPassword.getText().equals("1234")) {
             Stage stage = (Stage) txtUsrName.getScene().getWindow();
             Parent parent = FXMLLoader.load(getClass().getResource("/view/inventoryManager/InventoryManagerAccess.fxml"));
             stage.setScene(new Scene(parent));
         }
     }
+
+    public void enableSignIn(KeyEvent keyEvent) {
+        if (txtUsrName.getText().equalsIgnoreCase("Admin") && txtPassword.getText().equals("1234")) {
+            signInButton.setDisable(false);
+        }else if (txtUsrName.getText().equalsIgnoreCase("Cashier") && txtPassword.getText().equals("1234")){
+            signInButton.setDisable(false);
+        }else if (txtUsrName.getText().equalsIgnoreCase("Inventory") && txtPassword.getText().equals("1234")){
+            signInButton.setDisable(false);
+        } else {
+            signInButton.setDisable(true);
+        }
+    }
+
 }

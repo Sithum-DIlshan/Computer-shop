@@ -86,7 +86,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="58.0" layoutY="91.0" mnemonicParsing="false" styleClass="placeOrder" stylesheets="@../../style/button.css" text="Place order">
+            <Button layoutX="58.0" layoutY="91.0" mnemonicParsing="false" styleClass="placeOrder" stylesheets="@../../style/button.css" text="Place overviewTM">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

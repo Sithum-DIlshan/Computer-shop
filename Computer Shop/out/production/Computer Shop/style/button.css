@@ -1,5 +1,16 @@
 .signButton {
-    -fx-background-color: linear-gradient(to right, #ff7043, #f57c00);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #039be5;
+    -fx-border-width: 1px;
+    -fx-text-fill: #575757;
+}
+
+.signButton:hover {
+    -fx-border-radius: 10px;
+    -fx-background-color: #039be5;
+    -fx-text-fill: white;
 }
 
 .reportsButton {

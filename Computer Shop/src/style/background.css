@@ -1,6 +1,6 @@
 
 .backgroundColor1{
-    -fx-background-color: linear-gradient(to right,#6200ea, #2196f3);
+    -fx-background-color: linear-gradient(to right,#4a148c, #7b1fa2);
     -fx-background-radius: 10 10 10 10;
     -fx-border-radius: 10 10 10 10;
 }

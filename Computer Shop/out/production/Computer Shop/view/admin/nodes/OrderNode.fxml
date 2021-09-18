@@ -40,7 +40,7 @@
             <Insets left="80.0" />
          </padding>
       </Label>
-      <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../../../style/button.css" text="Edit">
+      <Button mnemonicParsing="false" styleClass="reportsButton" stylesheets="@../../../style/button.css" text="Update">
          <HBox.margin>
             <Insets left="40.0" />
          </HBox.margin>

@@ -221,7 +221,7 @@
                </children></VBox>
          </left>
          <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Pane fx:id="mainPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
                   <HBox alignment="CENTER_LEFT" layoutX="23.0" layoutY="157.0" prefHeight="46.0" prefWidth="711.0">
                      <children>

@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminOverviewController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminOverviewController">
     <children>
         <HBox alignment="CENTER_LEFT" layoutX="23.0" layoutY="157.0" prefHeight="46.0" prefWidth="711.0">
             <children>
-                <Label text="Company Name" textFill="#393939">
+                <Label text="Company Name" textFill="#c9c9c9">
                     <font>
                         <Font name="DejaVu Sans" size="13.0" />
                     </font></Label>
-                <Label contentDisplay="CENTER" text="Customer Id" textFill="#393939">
+                <Label contentDisplay="CENTER" text="Customer Id" textFill="#c9c9c9">
                     <padding>
                         <Insets left="85.0" />
                     </padding>
@@ -23,7 +27,7 @@
                         <Font name="DejaVu Sans" size="13.0" />
                     </font>
                 </Label>
-                <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="Order Id" textFill="#393939">
+                <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="Order Id" textFill="#c9c9c9">
                     <padding>
                         <Insets left="85.0" />
                     </padding>
@@ -31,7 +35,7 @@
                         <Font name="DejaVu Sans" size="13.0" />
                     </font>
                 </Label>
-                <Label contentDisplay="CENTER" layoutX="46.0" layoutY="10.0" text="Quantity" textFill="#393939">
+                <Label contentDisplay="CENTER" layoutX="46.0" layoutY="10.0" text="Quantity" textFill="#c9c9c9">
                     <padding>
                         <Insets left="85.0" />
                     </padding>
@@ -39,7 +43,7 @@
                         <Font name="DejaVu Sans" size="13.0" />
                     </font>
                 </Label>
-                <Label contentDisplay="CENTER" layoutX="82.0" layoutY="10.0" text="Order Date" textFill="#393939">
+                <Label contentDisplay="CENTER" layoutX="82.0" layoutY="10.0" text="Order Date" textFill="#c9c9c9">
                     <padding>
                         <Insets left="85.0" />
                     </padding>
@@ -49,19 +53,36 @@
                 </Label>
             </children>
         </HBox>
-        <ScrollPane layoutX="23.0" layoutY="206.0" prefHeight="405.0" prefWidth="719.0" stylesheets="@../../style/scroll_pane.css">
+        <ScrollPane layoutX="6.0" layoutY="206.0" prefHeight="405.0" prefWidth="739.0" stylesheets="@../../style/scroll_pane.css">
          <content>
-            <Pane fx:id="overviewPane" prefHeight="405.0" prefWidth="717.0" />
+            <VBox fx:id="vbox2" prefHeight="393.0" prefWidth="737.0">
+               <children>
+                  <TableView fx:id="tblOverview" prefHeight="416.0" prefWidth="717.0" stylesheets="@../../style/style2.css">
+                    <columns>
+                      <TableColumn fx:id="colCompanyName" prefWidth="123.0" text=" " />
+                      <TableColumn fx:id="colCustomerId" prefWidth="164.0" text=" " />
+                        <TableColumn fx:id="colOrderId" prefWidth="190.0" text=" " />
+                        <TableColumn fx:id="colQuantity" prefWidth="95.0" text=" " />
+                        <TableColumn fx:id="colOrderDate" prefWidth="148.0" text=" " />
+                    </columns>
+                     <styleClass>
+                        <String fx:value="noheader" />
+                        <String fx:value="table-row-cell" />
+                        <String fx:value="my-table" />
+                        <String fx:value="red-column" />
+                     </styleClass>
+                  </TableView>
+               </children></VBox>
          </content>
         </ScrollPane>
-        <Label layoutX="30.0" layoutY="14.0" text="Today Orders">
+        <Label layoutX="30.0" layoutY="14.0" text="Today Orders" textFill="#c9c9c9">
             <font>
                 <Font name="DejaVu Sans" size="21.0" />
             </font>
         </Label>
         <HBox alignment="CENTER_LEFT" layoutX="33.0" layoutY="70.0" prefHeight="40.0" prefWidth="690.0">
             <children>
-                <Label text="100" textFill="#1976d2">
+                <Label fx:id="totalOrders" text="100" textFill="#61b3ff">
                     <padding>
                         <Insets left="200.0" />
                     </padding>
@@ -69,7 +90,7 @@
                         <Font size="22.0" />
                     </font>
                 </Label>
-                <Label layoutX="10.0" layoutY="33.0" text="20" textFill="#00c9ab">
+                <Label fx:id="totalRepairs" layoutX="10.0" layoutY="33.0" text="20" textFill="#33ffe0">
                     <padding>
                         <Insets left="200.0" />
                     </padding>
@@ -79,7 +100,7 @@
                 </Label>
             </children>
         </HBox>
-        <Label layoutX="217.0" layoutY="110.0" text="Total Orders" />
-        <Label layoutX="444.0" layoutY="110.0" text="Total Repairs" />
+        <Label layoutX="217.0" layoutY="110.0" text="Total Orders" textFill="#c9c9c9" />
+        <Label layoutX="444.0" layoutY="110.0" text="Total Repairs" textFill="#c9c9c9" />
     </children>
 </Pane>

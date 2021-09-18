@@ -2,9 +2,12 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -12,8 +15,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" fx:controller="controller.OrdersController" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="orderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdersController">
    <children>
       <JFXTextField focusColor="#2c3e50" layoutX="561.0" layoutY="29.0" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #2c3e50; -fx-border-color: #bdbdbd; -fx-background-radius: 8px; -fx-border-radius: 8px;" styleClass="searchButton" stylesheets="@../../style/button.css">
          <font>
@@ -51,7 +53,24 @@
       </HBox>
       <ScrollPane layoutX="6.0" layoutY="176.0" prefHeight="420.0" prefWidth="734.0" stylesheets="@../../style/scroll_pane.css">
          <content>
-            <Pane fx:id="orderPane" prefHeight="421.0" prefWidth="728.0" style="-fx-background-color: #2c3e50;" />
+            <TableView fx:id="tblOrders" prefHeight="423.0" prefWidth="748.0" stylesheets="@../../style/style2.css">
+              <columns>
+                <TableColumn fx:id="colOrderId" prefWidth="81.0" text="C1" />
+                <TableColumn prefWidth="53.0" text="C2" />
+                  <TableColumn fx:id="colCustomerId" prefWidth="98.0" text="C2" />
+                  <TableColumn prefWidth="56.0" text="C2" />
+                  <TableColumn fx:id="colOrderDate" prefWidth="100.0" text="C2" />
+                  <TableColumn prefWidth="49.0" text="C2" />
+                  <TableColumn fx:id="colOrderCost" text="C2" />
+                  <TableColumn fx:id="colUpdateButton" prefWidth="90.0" text="C2" />
+                  <TableColumn fx:id="colRemoveButton" prefWidth="106.0" text="C2" />
+              </columns>
+               <styleClass>
+                  <String fx:value="noheader" />
+                  <String fx:value="table-row-cell" />
+                  <String fx:value="my-table" />
+               </styleClass>
+            </TableView>
          </content>
       </ScrollPane>
    </children>
