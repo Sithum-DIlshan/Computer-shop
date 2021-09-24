@@ -16,6 +16,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 import javafx.util.converter.DoubleStringConverter;
+import model.ItemDetails;
 import model.OrdersTM;
 import org.jetbrains.annotations.NotNull;
 
@@ -23,6 +24,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
@@ -139,13 +141,43 @@ public class OrdersController implements Initializable {
 
                                 button.setOnAction(event -> {
                                     OrdersTM o = getTableView().getItems().get(getIndex());
+
                                     if (removeOnAction(o)) {
+                                        try {
+                                            ResultSet rst = DbConnection.getInstance().
+                                                    getConnection().prepareStatement(
+                                                            "SELECT * FROM `Order Detail` WHERE orderId = '" + o.getOrderId() + "'").executeQuery();
+
+                                            while(rst.next()){
+                                                updateQty(rst.getString(1), rst.getInt(3));
+                                            }
+
+
+
+                                        } catch (SQLException e) {
+                                            e.printStackTrace();
+                                        } catch (ClassNotFoundException e) {
+                                            e.printStackTrace();
+                                        }
                                         tblOrders.getItems().clear();
                                         tbl_init();
                                     }
                                 });
                                 setGraphic(button);
                                 setText(null);
+                            }
+                        }
+
+                        private void updateQty(String code, int qty) {
+                            try {
+                                DbConnection.getInstance().getConnection().prepareStatement(
+                                        "UPDATE Item SET qtyOnHand = (qtyOnhand - " + qty + ") WHERE code = '"+code+"'").executeUpdate();
+
+
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            } catch (ClassNotFoundException e) {
+                                e.printStackTrace();
                             }
                         }
                     };

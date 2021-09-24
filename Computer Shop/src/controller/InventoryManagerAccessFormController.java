@@ -56,7 +56,7 @@ public class InventoryManagerAccessFormController implements Initializable {
         overview.setOnMouseClicked(event -> {
             //overviewPane.setVisible(true);
             try {
-                border.setCenter(FXMLLoader.load(getClass().getResource("/view/cashier/Overview.fxml")));
+                border.setCenter(FXMLLoader.load(getClass().getResource("/view/admin/Overview.fxml")));
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -58,4 +58,30 @@
     -fx-text-fill: #c9c9c9;
 }
 
+.textPane{
+    -fx-background-color: #696464;
+    -fx-border-color: rgba(76, 73, 73, 0.83);
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+.textField{
+    -fx-background-color: white;
+    -fx-prompt-text-fill: #726d6d;
+}
+
+.textLabel{
+    -fx-background-color: white;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(76, 73, 73, 0.83);;
+}
+
+.combo-box .cell{
+    -fx-text-fill:  #b0b0b0;
+    -fx-font: 12px "Arial";
+}
+
+.jfx-date-picker .jfx-text-field{
+    -fx-text-fill: #ababab;
+}
 

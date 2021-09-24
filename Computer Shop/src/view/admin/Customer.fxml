@@ -2,16 +2,19 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="756.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
@@ -53,7 +56,7 @@
                   <Insets left="60.0" />
                </padding>
             </Label>
-                <Button mnemonicParsing="false" styleClass="addButton" stylesheets="@../../style/button.css" text="Add Customer">
+                <Button fx:id="addCustomer" mnemonicParsing="false" styleClass="addButton" stylesheets="@../../style/button.css" text="Add Customer">
                     <HBox.margin>
                         <Insets left="50.0" />
                     </HBox.margin>
@@ -62,7 +65,25 @@
         </HBox>
         <ScrollPane layoutX="6.0" layoutY="176.0" prefHeight="420.0" prefWidth="734.0" stylesheets="@../../style/scroll_pane.css">
          <content>
-            <VBox fx:id="vbox" prefHeight="419.0" prefWidth="736.0" styleClass="backgroundColor2" stylesheets="@../../style/background.css" />
+            <StackPane fx:id="stack" prefHeight="425.0" prefWidth="743.0">
+               <children>
+                  <TableView fx:id="tblCustomer" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../style/style2.css">
+                    <columns>
+                      <TableColumn fx:id="colCustomerId" prefWidth="124.0" text="C1" />
+                      <TableColumn fx:id="colCustName" prefWidth="143.0" text="C2" />
+                        <TableColumn fx:id="colAddress" prefWidth="144.0" text="C2" />
+                        <TableColumn fx:id="colContact" prefWidth="110.0" text="C2" />
+                        <TableColumn fx:id="colCity" prefWidth="94.0" text="C2" />
+                        <TableColumn fx:id="colRemoveButton" prefWidth="97.0" text="C2" />
+                    </columns>
+                     <styleClass>
+                        <String fx:value="my-table" />
+                        <String fx:value="noheader" />
+                        <String fx:value="table-row-cell" />
+                     </styleClass>
+                  </TableView>
+               </children>
+            </StackPane>
          </content>
         </ScrollPane>
     </children>

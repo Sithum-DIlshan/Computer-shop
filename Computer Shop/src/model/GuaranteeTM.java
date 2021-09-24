@@ -2,10 +2,10 @@ package model;
 
 public class GuaranteeTM {
     private String guaranteeId;
-    private String guaranteePeriod;
-        private String itemCode;
+    private int guaranteePeriod;
+    private String itemCode;
 
-    public GuaranteeTM(String guaranteeId, String guaranteePeriod, String itemCode) {
+    public GuaranteeTM(String guaranteeId, int guaranteePeriod, String itemCode) {
         this.guaranteeId = guaranteeId;
         this.guaranteePeriod = guaranteePeriod;
         this.itemCode = itemCode;
@@ -23,11 +23,11 @@ public class GuaranteeTM {
         this.guaranteeId = guaranteeId;
     }
 
-    public String getGuaranteePeriod() {
+    public int getGuaranteePeriod() {
         return guaranteePeriod;
     }
 
-    public void setGuaranteePeriod(String guaranteePeriod) {
+    public void setGuaranteePeriod(int guaranteePeriod) {
         this.guaranteePeriod = guaranteePeriod;
     }
 

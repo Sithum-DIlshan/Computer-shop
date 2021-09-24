@@ -5,6 +5,13 @@
     -jfx-unfocus-color: #6e6e6e;
 }
 
+.textfield{
+    -fx-prompt-text-fill: #ababab;
+    -fx-text-inner-color: #ababab;
+    -jfx-focus-color: #ababab;
+    -jfx-unfocus-color: #ababab;
+}
+
 .jfx-button{
     -fx-border-radius: 10px;
     -fx-border-color: #42a5f5;

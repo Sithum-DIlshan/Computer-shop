@@ -46,7 +46,7 @@
                         <Insets left="80.0" />
                     </padding>
                 </Label>
-                <Button mnemonicParsing="false" styleClass="addButton" stylesheets="@../../style/button.css" text="Add Guarantee">
+                <Button fx:id="addGuaranteeButton" mnemonicParsing="false" styleClass="addButton" stylesheets="@../../style/button.css" text="Add Guarantee">
                     <HBox.margin>
                         <Insets left="100.0" />
                     </HBox.margin>

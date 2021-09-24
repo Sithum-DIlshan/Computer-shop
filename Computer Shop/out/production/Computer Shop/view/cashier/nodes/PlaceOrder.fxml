@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -10,75 +12,50 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.ColorAdjust?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="849.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderController">
    <children>
-      <ImageView fitHeight="274.0" fitWidth="267.0" layoutX="29.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../assests/376-3768864_original-size-is-350-350-pixels-poster.png" />
-         </image>
-         <effect>
-            <ColorAdjust brightness="-0.56" />
-         </effect>
-      </ImageView>
-      <Label layoutX="334.0" layoutY="30.0" text="G-31 Mother Board" textFill="#393939">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="362.0" layoutY="80.0" text="Select Item" textFill="#4a4949" />
-      <Separator layoutX="320.0" layoutY="55.0" prefHeight="4.0" prefWidth="417.0" />
-      <ComboBox layoutX="487.0" layoutY="75.0" prefHeight="20.0" prefWidth="151.0" promptText="-Select-" style="-fx-border-radius: 0px; -fx-background-radius: 0px; -fx-background-color: #ffff; -fx-border-color: #b0b0b0;" />
-      <Label layoutX="362.0" layoutY="124.0" text="Select Customer" textFill="#4a4949" />
-      <ComboBox layoutX="487.0" layoutY="119.0" prefHeight="20.0" prefWidth="151.0" promptText="-Select-" style="-fx-border-radius: 0px; -fx-background-radius: 0px; -fx-background-color: #ffff; -fx-border-color: #b0b0b0;" />
       <Pane layoutX="447.0" layoutY="216.0" prefHeight="120.0" prefWidth="298.0" style="-fx-background-color: #cccccc;">
          <children>
             <VBox layoutY="-22.0" prefHeight="73.0" prefWidth="298.0">
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="108.0" prefWidth="298.0">
                      <children>
-                        <Label text="Price : ">
-                           <HBox.margin>
-                              <Insets top="5.0" />
-                           </HBox.margin>
-                           <padding>
-                              <Insets left="20.0" top="15.0" />
-                           </padding>
-                        </Label>
-                        <Label text="22.40" textFill="#140cff">
-                           <font>
-                              <Font name="System Bold" size="22.0" />
-                           </font>
-                           <padding>
-                              <Insets top="20.0" />
-                           </padding>
-                        </Label>
-                        <Label text="qty">
-                           <padding>
-                              <Insets left="80.0" top="15.0" />
-                           </padding>
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Label>
-                        <TextField prefHeight="26.0" prefWidth="45.0" style="-fx-background-color: #fff; -fx-border-color: #b0b0b0;">
-                           <HBox.margin>
-                              <Insets top="20.0" />
-                           </HBox.margin>
-                        </TextField>
+                        <Pane prefHeight="70.0" prefWidth="298.0">
+                           <children>
+                              <Label fx:id="price" layoutX="67.0" layoutY="24.0" prefHeight="36.0" prefWidth="119.0" textFill="#140cff">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="-6.0" layoutY="27.0" text="Price : ">
+                                 <padding>
+                                    <Insets left="20.0" top="15.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="199.0" layoutY="27.0" text="qty">
+                                 <padding>
+                                    <Insets top="15.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="qtyBuy" layoutX="239.0" layoutY="35.0" prefHeight="26.0" prefWidth="45.0" style="-fx-background-color: #fff; -fx-border-color: #b0b0b0;" />
+                           </children>
+                        </Pane>
                      </children>
                   </HBox>
                   <Separator prefHeight="4.0" prefWidth="328.0" />
                </children>
             </VBox>
-            <Button layoutX="175.0" layoutY="79.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="94.0" styleClass="addToCartButton" stylesheets="@../../../style/button.css" text="Add to cart">
+            <Button fx:id="addToCart" layoutX="175.0" layoutY="79.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="94.0" styleClass="addToCartButton" stylesheets="@../../../style/button.css" text="Add to cart">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -86,7 +63,7 @@
                   <Font size="12.0" />
                </font>
             </Button>
-            <Button layoutX="14.0" layoutY="79.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="94.0" styleClass="placeOrder" stylesheets="@../../../style/button.css" text="Place overviewTM">
+            <Button fx:id="placeOrder" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="94.0" styleClass="placeOrder" stylesheets="@../../../style/button.css" text="Place Order">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -96,20 +73,52 @@
             </Button>
          </children>
       </Pane>
-      <Label layoutX="362.0" layoutY="171.0" text="Available qty" textFill="#4a4949" />
-      <TextField editable="false" layoutX="473.0" layoutY="165.0" prefHeight="16.0" prefWidth="56.0" style="-fx-background-color: #fff; -fx-border-color: #b0b0b0;" />
       <ScrollPane layoutX="18.0" layoutY="344.0" prefHeight="255.0" prefWidth="814.0" stylesheets="@../../../style/scroll_pane.css">
          <content>
-            <VBox fx:id="vbox" prefHeight="254.0" prefWidth="811.0">
+            <StackPane prefHeight="258.0" prefWidth="824.0">
                <children>
-                  <TableView prefHeight="320.0" prefWidth="811.0">
+                  <TableView fx:id="tblAddToCart" prefHeight="200.0" prefWidth="200.0">
                     <columns>
-                      <TableColumn prefWidth="406.0" text="C1" />
-                      <TableColumn prefWidth="404.0" text="C2" />
+                      <TableColumn fx:id="colCode" prefWidth="105.0" text="Item Code" />
+                      <TableColumn fx:id="colDescription" minWidth="0.0" prefWidth="234.0" text="Description" />
+                        <TableColumn fx:id="colUnitPrice" minWidth="0.0" prefWidth="113.0" text="Unit Price" />
+                        <TableColumn fx:id="colOrderedQty" minWidth="0.0" prefWidth="103.0" text="Ordered Qty" />
+                        <TableColumn fx:id="colTotal" minWidth="0.0" prefWidth="119.0" text="Total" />
+                        <TableColumn fx:id="colRemoveBtn" minWidth="0.0" prefWidth="121.0" text=" " />
                     </columns>
+                     <styleClass>
+                        <String fx:value="my-table" />
+                        <String fx:value="table-row-cell" />
+                     </styleClass>
+                     <stylesheets>
+                        <URL value="@../../../style/style2.css" />
+                        <URL value="@../../../style/table.css" />
+                     </stylesheets>
                   </TableView>
-               </children></VBox>
+               </children>
+            </StackPane>
          </content>
       </ScrollPane>
+      <StackPane fx:id="stack" layoutX="380.0" prefHeight="214.0" prefWidth="471.0" style="-fx-background-color: #ffff;">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="title" layoutX="58.0" layoutY="14.0" textFill="#393939">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="64.0" text="Select Item" textFill="#4a4949" />
+                  <Separator layoutX="10.0" layoutY="40.0" prefHeight="3.0" prefWidth="451.0" />
+                  <ComboBox fx:id="itemComboBox" layoutX="211.0" layoutY="59.0" prefHeight="20.0" prefWidth="151.0" promptText="-Select-" style="-fx-border-radius: 0px; -fx-background-radius: 0px; -fx-background-color: #ffff; -fx-border-color: #b0b0b0;" />
+                  <Label layoutX="86.0" layoutY="108.0" text="Select Customer" textFill="#4a4949" />
+                  <ComboBox fx:id="customerComboBox" layoutX="211.0" layoutY="103.0" prefHeight="20.0" prefWidth="151.0" promptText="-Select-" style="-fx-border-radius: 0px; -fx-background-radius: 0px; -fx-background-color: #ffff; -fx-border-color: #b0b0b0;" />
+                  <Label layoutX="86.0" layoutY="154.0" text="Available qty" textFill="#4a4949" />
+                  <TextField fx:id="qtyAvailable" editable="false" layoutX="197.0" layoutY="148.0" prefHeight="16.0" prefWidth="56.0" style="-fx-background-color: #fff; -fx-border-color: #b0b0b0;" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <ImageView fx:id="imageView" fitHeight="331.0" fitWidth="361.0" layoutX="18.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" smooth="false" />
    </children>
 </Pane>

@@ -70,8 +70,8 @@ public class CashierAccessFormController implements Initializable {
         overview.setOnMouseClicked(event -> {
             //overviewPane.setVisible(true);
             try {
-                border.setCenter(FXMLLoader.load(getClass().getResource("/view/cashier/Overview.fxml")));
-                border.setStyle("-fx-background-color: #fff");
+                border.setCenter(FXMLLoader.load(getClass().getResource("/view/admin/Overview.fxml")));
+                border.setStyle("-fx-background-color: #2c3e50");
             } catch (IOException e) {
                 e.printStackTrace();
             }

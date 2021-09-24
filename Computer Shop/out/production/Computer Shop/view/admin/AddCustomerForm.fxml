@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="443.0" style="-fx-background-color: #31314a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+    <children>
+        <AnchorPane prefHeight="488.0" prefWidth="441.0">
+            <children>
+                <Label layoutX="160.0" layoutY="14.0" text="Add Customer" textFill="#ababab">
+                    <font>
+                        <Font name="DejaVu Sans" size="17.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="customerId" labelFloat="true" layoutX="68.0" layoutY="77.0" onKeyReleased="#release" prefHeight="21.0" prefWidth="261.0" promptText="Customer Id" styleClass="textfield" stylesheets="@../../style/style.css" />
+                <JFXTextField fx:id="customerName" labelFloat="true" layoutX="68.0" layoutY="137.0" onKeyReleased="#release" prefHeight="21.0" prefWidth="261.0" promptText="Customer Name" styleClass="textfield" stylesheets="@../../style/style.css" />
+                <JFXButton fx:id="addButton" layoutX="329.0" layoutY="465.0" prefHeight="26.0" prefWidth="87.0" styleClass="addButton" stylesheets="@../../style/button.css" text="Add" />
+                <JFXTextField fx:id="customerAddress" labelFloat="true" layoutX="68.0" layoutY="192.0" onKeyReleased="#release" prefHeight="21.0" prefWidth="261.0" promptText="Customer Address" styleClass="textfield" stylesheets="@../../style/style.css" />
+                <JFXTextField fx:id="customerContact" labelFloat="true" layoutX="68.0" layoutY="252.0" onKeyReleased="#release" prefHeight="21.0" prefWidth="261.0" promptText="Customer Contact" styleClass="textfield" stylesheets="@../../style/style.css" />
+            <JFXTextField fx:id="customerCity" labelFloat="true" layoutX="68.0" layoutY="318.0" onKeyReleased="#release" prefHeight="21.0" prefWidth="261.0" promptText="Customer City" styleClass="textfield" stylesheets="@../../style/style.css" />
+            <JFXTextField fx:id="customerEmail" labelFloat="true" layoutX="68.0" layoutY="393.0" onKeyReleased="#release" prefHeight="21.0" prefWidth="261.0" promptText="Customer Email" styleClass="textfield" stylesheets="@../../style/style.css" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
