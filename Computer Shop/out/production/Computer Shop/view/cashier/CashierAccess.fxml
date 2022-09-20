@@ -36,7 +36,7 @@
                                 <Font name="DejaVu Sans" size="13.0" />
                             </font>
                             <VBox.margin>
-                                <Insets top="60.0" />
+                                <Insets top="50.0" />
                             </VBox.margin>
                             <graphic>
                                 <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
@@ -67,7 +67,7 @@
                                 </ImageView>
                             </graphic>
                             <VBox.margin>
-                                <Insets top="60.0" />
+                                <Insets top="50.0" />
                             </VBox.margin>
                             <padding>
                                 <Insets left="60.0" />
@@ -91,7 +91,7 @@
                         <Insets left="60.0" />
                      </padding>
                      <VBox.margin>
-                        <Insets top="60.0" />
+                        <Insets top="50.0" />
                      </VBox.margin>
                   </Button>
                         <Button fx:id="signOut" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="404.0" mnemonicParsing="false" onAction="#signOutClicked" prefHeight="38.0" prefWidth="264.0" styleClass="cashierAccessButtons" stylesheets="@../../style/button.css" text="Sign out" textFill="#c3bebe">
@@ -108,7 +108,7 @@
                                     </effect></ImageView>
                             </graphic>
                             <VBox.margin>
-                                <Insets top="60.0" />
+                                <Insets top="50.0" />
                             </VBox.margin>
                             <padding>
                                 <Insets left="60.0" />

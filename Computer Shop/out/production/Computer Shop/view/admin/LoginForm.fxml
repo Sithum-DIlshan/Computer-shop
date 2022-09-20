@@ -5,12 +5,19 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="874.0" style="-fx-background-color: #01579b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
-      <AnchorPane layoutX="523.0" layoutY="22.0" prefHeight="427.0" prefWidth="324.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="523.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="22.0">
+      <ImageView fitHeight="471.0" fitWidth="874.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/Untitled%20design.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="523.0" layoutY="22.0" prefHeight="427.0" prefWidth="324.0" style="-fx-background-color: #ffff; -fx-background-radius: 8px;" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="523.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="22.0">
          <children>
             <JFXTextField fx:id="txtUsrName" focusColor="#c3c2cc" labelFloat="true" layoutX="28.0" layoutY="138.0" onKeyReleased="#enableSignIn" prefHeight="26.0" prefWidth="281.0" promptText="username" styleClass="jfx-text-field" stylesheets="@../../style/style.css" unFocusColor="#c2baba" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="13.0">
                <font>
@@ -25,9 +32,9 @@
             </Label>
          </children>
       </AnchorPane>
-      <Label layoutX="70.0" layoutY="84.0" prefHeight="52.0" prefWidth="345.0" text="Welcome to Noax Computers" textFill="#e1e1e1">
+      <Label layoutX="64.0" layoutY="73.0" prefHeight="52.0" prefWidth="390.0" text="WEBLINE COMPUTERS" textFill="#e1e1e1">
          <font>
-            <Font name="DejaVu Sans" size="22.0" />
+            <Font name="DejaVu Sans" size="28.0" />
          </font>
       </Label>
       <FontAwesomeIcon fill="#f5f5f5" iconName="CLOSE" layoutX="853.0" layoutY="20.0" size="1.5em" wrappingWidth="17.214285850524902" />

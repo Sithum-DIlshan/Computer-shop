@@ -16,7 +16,7 @@ import javafx.scene.layout.VBox;
 import javafx.util.Callback;
 import javafx.util.converter.DoubleStringConverter;
 import model.RepairsTM;
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
 
 import java.net.URL;
 import java.sql.ResultSet;
