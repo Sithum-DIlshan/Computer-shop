@@ -1,4 +1,4 @@
-#First Semester Final-CourseWork
+# First Semester Final-CourseWork
 
 ![Screenshot from 2022-09-14 21-25-51](https://user-images.githubusercontent.com/79800028/191327749-17887315-0e2a-4f2d-925b-1b3100d83d43.png)
 ![Screenshot from 2022-09-14 21-26-24](https://user-images.githubusercontent.com/79800028/191327761-60bb4491-3b63-4f2f-b3c5-612432efc166.png)
